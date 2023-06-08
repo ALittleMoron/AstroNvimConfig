@@ -7,6 +7,7 @@ return {
     wrap = false,
     foldenable = false,
     langmap="ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz",
+    colorcolumn="100",
   },
   g = {
     mapleader = " ",

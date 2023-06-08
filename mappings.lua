@@ -3,6 +3,10 @@ local directions = require('hop.hint').HintDirection
 
 return {
   n = {
+    ["<leader><leader>k"] = {
+      "<cmd>lua vim.diagnostic.open_float()<CR>",
+      desc="LSP message detail",
+    },
     ["<leader><leader>w"] = {
       function ()
         hop.hint_words({ direction = directions.AFTER_CURSOR, current_line_only = false })

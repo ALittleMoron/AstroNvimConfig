@@ -29,8 +29,6 @@ return {
       disabled = {},
       timeout_ms = 1000,
     },
-
-    servers = {},
   },
 
   lazy = {
