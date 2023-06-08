@@ -5,7 +5,8 @@ return {
     spell = false,
     signcolumn = "auto",
     wrap = false,
-    foldenable = false
+    foldenable = false,
+    langmap="ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz",
   },
   g = {
     mapleader = " ",

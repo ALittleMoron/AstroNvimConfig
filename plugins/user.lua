@@ -4,10 +4,10 @@ return {
 	    priority = 1000,
      },
      {
-       'phaazon/hop.nvim',
-       branch = 'v2',
+       "phaazon/hop.nvim",
+       branch = "v2",
        config = function()
-         require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+         require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
        end
      },
 }
