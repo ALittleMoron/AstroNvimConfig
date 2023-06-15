@@ -19,15 +19,9 @@ return {
 
   lsp = {
     formatting = {
-      format_on_save = {
-        enabled = true,
-        allow_filetypes = {
-          "python",
-        },
-        ignore_filetypes = {},
-      },
+      format_on_save = true,
       disabled = {},
-      timeout_ms = 1000,
+      timeout_ms = 3400,
     },
   },
 
@@ -39,6 +33,5 @@ return {
       },
     },
   },
-  polish = function()
-  end,
+  polish = function() end,
 }

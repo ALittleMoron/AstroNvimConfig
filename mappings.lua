@@ -3,6 +3,22 @@ local directions = require('hop.hint').HintDirection
 
 return {
   n = {
+    ["<leader><leader>cl"] = {
+      "<cmd>TodoLocList<cr>",
+      desc = "Show special comment list panel",
+    },
+    ["<leader><leader>cs"] = {
+      "<cmd>TodoTelescope<cr>",
+      desc = "Search in telescope by special comments",
+    },
+    ["<leader><leader>tc"] = {
+      "<cmd>TodoTrouble<cr>",
+      desc = "Toggle todo-comments trouble panel",
+    },
+    ["<leader><leader>tt"] = {
+      "<cmd>TroubleToggle<cr>",
+      desc = "Toggle general trouble panel",
+    },
     ["<leader><leader>k"] = {
       "<cmd>lua vim.diagnostic.open_float()<CR>",
       desc="LSP message detail",
