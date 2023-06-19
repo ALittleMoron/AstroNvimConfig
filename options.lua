@@ -6,8 +6,8 @@ return {
     signcolumn = "auto",
     wrap = false,
     foldenable = false,
-    langmap="ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz",
-    colorcolumn="100",
+    langmap = "ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz",
+    colorcolumn = "100",
   },
   g = {
     mapleader = " ",
@@ -20,4 +20,3 @@ return {
     resession_enabled = false,
   },
 }
-

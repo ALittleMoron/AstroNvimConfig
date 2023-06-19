@@ -1,9 +1,9 @@
-local utils = require("astronvim.utils")
+local utils = require "astronvim.utils"
 return {
   -- themes
   {
-	  "ellisonleao/gruvbox.nvim",
-	  priority = 1000,
+    "ellisonleao/gruvbox.nvim",
+    priority = 1000,
   },
 
   -- verbose output for errors, warnings and others + easier goto for them.
@@ -25,11 +25,9 @@ return {
 
   -- motion utils
   {
-     "phaazon/hop.nvim",
-     branch = "v2",
-     config = function()
-       require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
-     end
+    "phaazon/hop.nvim",
+    branch = "v2",
+    config = function() require("hop").setup { keys = "etovxqpdygfblzhckisuran" } end,
   },
 
   -- python pack
@@ -37,7 +35,8 @@ return {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
       if opts.ensure_installed ~= "all" then
-        opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, { "python", "toml" })
+        opts.ensure_installed =
+          utils.list_insert_unique(opts.ensure_installed, { "python", "toml" })
       end
     end,
   },
@@ -48,19 +47,14 @@ return {
     end,
   },
   {
-    "jay-babu/mason-null-ls.nvim",
-    opts = function(_, opts)
-      opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, { "isort", "black", "flake8" })
-    end,
-  },
-  {
     "jay-babu/mason-nvim-dap.nvim",
-    opts = function(_, opts) opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, "python") end,
+    opts = function(_, opts)
+      opts.ensure_installed = utils.list_insert_unique(opts.ensure_installed, "python")
+    end,
   },
   {
     "linux-cultist/venv-selector.nvim",
     opts = {},
-    keys = { { "<leader>lv", "<cmd>:VenvSelect<cr>", desc = "Select VirtualEnv" } },
   },
   {
     "williamboman/mason.nvim",
@@ -69,4 +63,3 @@ return {
     },
   },
 }
-
