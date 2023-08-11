@@ -2,7 +2,7 @@ local utils = require "astronvim.utils"
 return {
   -- themes
   {
-    "ellisonleao/gruvbox.nvim",
+    "Shatur/neovim-ayu",
     priority = 1000,
   },
 
